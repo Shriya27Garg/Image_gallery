@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="Script.js"></script>
+<body>
+<h2 style="text-align:center; margin-top: 5%; color: white; font-size: 180%; margin-bottom: 5%;">GALLERY</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="pic2.jpeg" style="width:120%; margin-left: 3%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic5.jpeg" style="width:130%; height:70vh; margin: 0% 0% 0% 15%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic4.jpeg" style="width:130%; height:70vh; margin: 0% 0% 0% 30%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic8.jpeg" style="width:80%; height:22vh; margin: 0% 0% 0% 45%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic6.jpeg" style="width:120%; height:70vh; margin: -15% 0% 0% -356%;" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic1.jpeg" style="width:175%; height:32vh; margin: -140% 0% 100% 135%;" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic3.jpeg" style="width:170%; height:32vh; margin: -140% 0% 100% 195%;" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pic9.jpeg" style="width:80%; height:46vh; margin: -300% 0% 153% 165%;" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="pic2.jpeg" style="width:100%; height:50vh; margin-left: -25%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="pic5.jpeg" style="width:60%; margin-left: -5%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="pic4.jpeg" style="width:70%; margin-left: -10%;">
+    </div>
+    
+    <div class="mySlides">
+      <img src="pic8.jpeg" style="width:50%">
+    </div>
+
+    <div class="mySlides">
+      <img src="pic6.jpeg" style="width:65%; margin-left: -10%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="pic1.jpeg" style="width:100%; margin-left: -25%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="pic3.jpeg" style="width:100%; height: 50vh; margin-left: -25%;">
+    </div>
+
+    <div class="mySlides">
+      <img src="pic9.jpeg" style="width:70%; height: 80vh; margin-left: -10%;">
+    </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+</script>
+
+</body>
+</html>
